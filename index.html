@@ -1,0 +1,318 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>MUHAMMAD FAIZ DANIAL | Mobile Programming e-Portfolio</title> <style> :root{ --primary:#2e7d32; --secondary:#4caf50; --accent:#81c784; --light:#f5fff5; --dark:#1b1b1b; --white:#ffffff; --shadow:0 10px 25px rgba(0,0,0,0.1); }
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background:#f8faf8;
+color:#333;
+line-height:1.7;
+}
+
+header{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:white;
+padding:120px 20px 80px;
+text-align:center;
+}
+
+header h1{
+font-size:2.8rem;
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.1rem;
+opacity:0.95;
+}
+
+nav{
+position:sticky;
+top:0;
+z-index:1000;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+padding:15px;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:var(--primary);
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:var(--secondary);
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:var(--primary);
+font-size:2rem;
+}
+
+.intro-card,
+.reflection-box,
+.resource-box,
+.skills-box{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:var(--shadow);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:var(--shadow);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+color:var(--primary);
+margin-bottom:10px;
+}
+
+iframe{
+width:100%;
+height:220px;
+border:none;
+}
+
+.badge{
+display:inline-block;
+background:var(--accent);
+color:#1d3d1f;
+padding:6px 12px;
+border-radius:20px;
+margin-bottom:10px;
+font-size:0.85rem;
+font-weight:bold;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+background:var(--primary);
+color:white;
+text-decoration:none;
+padding:12px 18px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.btn:hover
+
+.skills-list{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:20px;
+}
+
+.skill{
+background:var(--accent);
+color:#1d3d1f;
+padding:10px 16px;
+border-radius:30px;
+font-weight:600;
+}
+
+footer{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:30px 20px;
+}
+
+ul{
+padding-left:20px;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:2rem;
+}
+
+iframe{
+    height:200px;
+}
+
+}
+</style>
+
+</head> <body> <header id="home"> <h1>MUHAMMAD FAIZ DANIAL BIN ABDUL AZIZ</h1> <p>Matric No: A216617 | Bachelor of Software Engineering</p> <p>Mobile Programming e-Portfolio | Universiti Kebangsaan Malaysia</p> <p>Instructor: Dr. Nelson Sana</p> </header> <nav> <div class="nav-container"> <a href="#home">Home</a> <a href="#labs">Labs</a> <a href="#projects">Projects</a> <a href="#reflection">Reflection</a> <a href="#skills">Skills</a> <a href="#resources">Resources</a> </div> </nav> <section> <h2 class="section-title">Introduction</h2> <div class="intro-card"> <p> Welcome to my Mobile Programming e-Portfolio for Universiti Kebangsaan Malaysia (UKM). This portfolio documents my learning journey throughout the Mobile Programming course, where I developed Android applications using Kotlin and Jetpack Compose. Throughout the semester, I completed five laboratory exercises and two major projects that gradually enhanced my understanding of user interface design, navigation, local databases, cloud integration, APIs, and device sensors. </p> <br> <p> My main application, <strong>CityReport</strong>, was developed to support <strong>SDG 11: Sustainable Cities and Communities</strong>. The application aims to help communities identify and report city-related issues, encouraging a cleaner, safer, and more peaceful living environment. Through this project, I learned how technology can contribute to building happier and more sustainable communities. </p> </div> </section> <section id="labs"> <h2 class="section-title">Laboratory Activities</h2>
+<div class="grid">
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/otk8u4Q4sCY" title="Lab 1 UI" allowfullscreen></iframe>
+        <div class="card-content">
+            <span class="badge">Lab 1 - UI</span>
+            <h3>User Interface Design</h3>
+            <p>Introduction to Android Studio and Jetpack Compose for creating modern user interfaces.</p>
+            <br>
+            <strong>Reflection</strong>
+            <p>I learned how to design UI using Android Studio and Jetpack Compose. This lab introduced the foundation of mobile application development and helped me understand layout organization. It improved my confidence in creating visually appealing interfaces.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/PR1umApJKlk" title="Lab 2 Interaction" allowfullscreen></iframe>
+        <div class="card-content">
+            <span class="badge">Lab 2 - Interaction</span>
+            <h3>User Interaction</h3>
+            <p>Implementing interaction between user input and displayed content.</p>
+            <br>
+            <strong>Reflection</strong>
+            <p>I learned how to create interactions between text fields and displayed output using remember state management. This helped me understand reactive programming concepts in Jetpack Compose. It also showed how user actions can dynamically update the interface.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/bvg2a7MUmK4" title="Lab 3 Material Design" allowfullscreen></iframe>
+        <div class="card-content">
+            <span class="badge">Lab 3 - Material Design</span>
+            <h3>Material Design</h3>
+            <p>Applying Material Design principles to create structured and consistent interfaces.</p>
+            <br>
+            <strong>Reflection</strong>
+            <p>This lab taught me how to create a more structured and professional user interface using Material Design components. I gained experience with themes, cards, buttons, and layouts. The result was a cleaner and more user-friendly application.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/NNbt94Rvkzs" title="Lab 4 Navigation" allowfullscreen></iframe>
+        <div class="card-content">
+            <span class="badge">Lab 4 - Navigation</span>
+            <h3>Navigation</h3>
+            <p>Building multi-screen applications using navigation components.</p>
+            <br>
+            <strong>Reflection</strong>
+            <p>I learned how to navigate between multiple screens while maintaining application state using mutableState. This lab helped me understand screen routing and user flow. Navigation is an essential component of modern mobile applications.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/GUY4fV6Nw0I" title="Lab 5 Room Database" allowfullscreen></iframe>
+        <div class="card-content">
+            <span class="badge">Lab 5 - Room</span>
+            <h3>Room Database</h3>
+            <p>Implementing local data storage with Room Database, DAO, and entities.</p>
+            <br>
+            <strong>Reflection</strong>
+            <p>I learned how to use Room Database with DAO and database classes to store local application data. This improved my understanding of persistent storage in Android applications. It also prepared me for integrating more advanced data management solutions.</p>
+        </div>
+    </article>
+
+</div>
+</section> <section id="projects"> <h2 class="section-title">Projects</h2>
+<div class="grid">
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/zm4l0P6lGzc" title="Project 1 CityReport" allowfullscreen></iframe>
+        <div class="card-content">
+            <span class="badge">Project 1</span>
+            <h3>CityReport</h3>
+            <p><strong>Problem Statement:</strong> Build application features, navigation, interactions, and a complete user interface for the CityReport application.</p>
+
+            <br>
+            <strong>Reflection</strong>
+            <p>I learned how to design a consistent user interface and maintain application data across multiple screens. This project strengthened my understanding of navigation and interaction design. It also taught me the importance of planning application architecture before development.</p>
+
+            <a href="https://github.com/Paeh66/A216617_FaizDanial_MrNelson_Project1" target="_blank" class="btn">View on GitHub</a>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/szhi-mJwtM0" title="Project 2 CityReport" allowfullscreen></iframe>
+        <div class="card-content">
+            <span class="badge">Project 2</span>
+            <h3>CityReport</h3>
+            <p><strong>Problem Statement:</strong> Integrate all laboratory knowledge including Room Database, APIs, sensors, and cloud services into one complete mobile application.</p>
+
+            <br>
+            <strong>Reflection</strong>
+            <p>I learned how to integrate device sensors, fetch data from web APIs, and store information in Firebase Cloud services. This project exposed me to real-world mobile development challenges. It significantly improved my skills in creating scalable and intelligent Android applications.</p>
+
+            <a href="https://github.com/Paeh66/A216617_FaizDanial_MrNelson_Project2" target="_blank" class="btn">View on GitHub</a>
+        </div>
+    </article>
+
+</div>
+</section> <section id="reflection"> <h2 class="section-title">Reflection & Learning Journey</h2>
+<div class="reflection-box">
+    <p>
+        Throughout this Mobile Programming course, I gained valuable hands-on experience in Android application development using Kotlin and Jetpack Compose. Each laboratory exercise introduced a new concept that gradually built my technical foundation, from user interface design to local database implementation. The CityReport project allowed me to combine these concepts with APIs, sensors, and cloud technologies to create a more complete and practical solution. Overall, this learning journey improved my problem-solving abilities, software engineering skills, and confidence in developing modern mobile applications.
+    </p>
+</div>
+</section> <section id="skills"> <h2 class="section-title">Skills & Tech Stack</h2>
+<div class="skills-box">
+    <div class="skills-list">
+        <span class="skill">Kotlin</span>
+        <span class="skill">Jetpack Compose</span>
+        <span class="skill">Android Studio</span>
+        <span class="skill">Room Database</span>
+        <span class="skill">Navigation Compose</span>
+        <span class="skill">Firebase Firestore</span>
+        <span class="skill">REST API</span>
+        <span class="skill">JSON</span>
+        <span class="skill">Material Design</span>
+        <span class="skill">State Management</span>
+        <span class="skill">Sensors Integration</span>
+        <span class="skill">GitHub</span>
+    </div>
+</div>
+</section> <section id="resources"> <h2 class="section-title">Resources & Acknowledgements</h2>
+<div class="resource-box">
+    <ul>
+        <li>Jetpack Compose</li>
+        <li>Android Navigation Compose</li>
+        <li>Room Database</li>
+        <li>Firebase Firestore</li>
+        <li>Android Sensor APIs</li>
+        <li>REST APIs and JSON Data Processing</li>
+        <li>Material Design Components</li>
+        <li>GitHub for version control and project hosting</li>
+        <li>Android Studio Official Documentation</li>
+        <li>Google Developer Documentation</li>
+        <li>AI Assistance (ChatGPT) used for learning support, debugging guidance, code explanation, and documentation improvement.</li>
+    </ul>
+</div>
+</section> <footer> <p><strong>MUHAMMAD FAIZ DANIAL BIN ABDUL AZIZ</strong></p> <p>Matric No: A216617</p> <p>&copy; 2026 Mobile Programming e-Portfolio | Universiti Kebangsaan Malaysia</p> </footer> </body> </html>
